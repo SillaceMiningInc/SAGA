@@ -93,8 +93,12 @@ Control-x .... Y to save
 cd ~/SagaCoin
 
 #Start the Deamon, run:
-sagacoind getmininginfo
-#you should see the block number, and run that command every couple minutes
+sagacoind
+
+#Watch Sync Progress with the following command:
+watch sagacoind getmininginfo
+
+#you should see the block number rising if you have connections
 #until you sync up to the current block.  Then you should be ready to continue:
 
 #now, let's see if we can see our ip in the list, swap in YOUR ip instead of xx.xx.xx.xx:
