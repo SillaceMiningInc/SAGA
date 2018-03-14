@@ -83,7 +83,16 @@ sudo chmod +x saga_install.sh
 sh saga_install.sh
 #enter y at the end to enable firewall
 
-#after finishes, run:
+#At the end of the script edit the config to add a password (won't work without)
+cd ~/.SagaCoin
+nano sagacoin.conf 
+#Add in an rpcpassword.... script creates this as blank, this is required to start sagacoind
+Control-x .... Y to save
+
+#Now Return to SAGA directory
+cd ~/SagaCoin
+
+#Start the Deamon, run:
 sagacoind getmininginfo
 #you should see the block number, and run that command every couple minutes
 #until you sync up to the current block.  Then you should be ready to continue:
