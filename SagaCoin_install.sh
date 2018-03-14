@@ -1,5 +1,5 @@
 #!/bin/bash
-#paranoidtruth
+#paranoidtruth and SillaceMiningLLC
 
 #PATH TO CURRENT SAGA:  YOU MUST ALSO CHANGE TAR & MV COMMANDS
 FILE_NAME="https://github.com/sagacrypto/SagaCoin/releases/download/1.0.0.5/sagacoin_1.0.0.5_ubuntu16.04.tar.gz"
