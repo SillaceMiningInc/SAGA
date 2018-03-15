@@ -92,11 +92,20 @@ Control-x .... Y to save
 #Now Return to SAGA directory
 cd ~/SagaCoin
 
+#strip and mv
+strip sagacoind
+strip sagacoin-qt
+mv sagacoind /usr/local/bin
+mv sagacoin-qt /usr/local/bin
+
+#Good time to check if the move worked properly
+cd usr/local/bin
+
 #Start the Deamon, run:
 sagacoind
 
-#Watch Sync Progress with the following command:
-watch sagacoind getmininginfo
+#Watch Sync Progress with the following command (refresh every 30 seconds):
+watch -n 30 sagacoind getmininginfo
 
 #you should see the block number rising if you have connections
 #until you sync up to the current block.  Then you should be ready to continue:
